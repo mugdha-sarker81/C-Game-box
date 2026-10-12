@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -I.
 
-SRCS = main.c games/candy_crush.c
+SRCS = main.c games/candy_crush.c games/snake.c
 OBJS = $(SRCS:.c=.o)
 TARGET = gamebox
 
@@ -14,7 +14,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJS) $(TARGET) $(TARGET).exe
 
 run: $(TARGET)
 	./$(TARGET)
