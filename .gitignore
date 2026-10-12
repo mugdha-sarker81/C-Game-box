@@ -36,6 +36,9 @@
 *.x86_64
 *.hex
 
+# Game data
+puzzle_best.txt
+
 # Debug files
 *.dSYM/
 *.su

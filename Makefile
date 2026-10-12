@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -I.
 
-SRCS = main.c games/candy_crush.c games/snake.c
+SRCS = main.c games/candy_crush.c games/snake.c games/puzzle_game.c
 OBJS = $(SRCS:.c=.o)
 TARGET = gamebox
 

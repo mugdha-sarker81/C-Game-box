@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include "games/candy_crush.h"
+#include "games/puzzle_game.h"
 #include "games/snake.h"
 
 static void clear_screen(void)
@@ -20,6 +21,7 @@ static void show_menu(void)
     printf("-----------------------------------------------\n");
     printf("  1. Candy Crush\n");
     printf("  2. Snake\n");
+    printf("  3. Sliding Puzzle\n");
     printf("  0. Exit\n");
     printf("-----------------------------------------------\n");
     printf("  Choose an option: ");
@@ -49,6 +51,10 @@ int main(void)
 
             case 2:
                 play_snake();
+                break;
+
+            case 3:
+                puzzle_game_run();
                 break;
 
             case 0:
